@@ -869,7 +869,50 @@
       </div>
   </div>
     </section>
-
+    <style>
+        /* Add your custom styles here */
+        .custom-slick-slider {
+            display: flex;
+            flex-wrap: nowrap; /* Ensure items stay in a single row */
+            overflow-x: auto; /* Enable horizontal scrolling on small screens */
+            position: relative;
+            animation: fadeIn 1s ease-out; /* Apply fade-in animation */
+        }
+    
+        .by {
+            flex: 0 0 auto; /* Prevent items from growing */
+            margin-right: 15px; /* Adjust margin between items */
+            opacity: 0; /* Set initial opacity to 0 */
+            animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation to each column */
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        /* Navigation controls */
+        .nav-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+        }
+    
+        .nav-left {
+            left: 0;
+        }
+    
+        .nav-right {
+            right: 0;
+        }
+    </style>
+    
     <section class="detail-layout-section fc-mt-25p">
   <div class="container">
       <div class="row">
@@ -894,7 +937,7 @@
     </div>
       </div>
   
-      <div class="col-xs-12 col-md-3 fc-py-15p" style="padding-right: 10px;">
+      <div class="col-xs-12 by fc-py-15p" style="padding-right: 10px;">
     <div>
   <a class="changeLayout fc-cursor" data-layout-id="2">
  <div class="layout-description ld-2 fc-p-10p  " >
