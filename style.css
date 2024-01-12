@@ -1404,8 +1404,9 @@
   margin: 0 auto;
     }
     
-    .fc-custom-navbar-logo {
+  .fc-custom-navbar-logo {
   width: 60px;
+  background-color: #ffffff;
     }
     
     nav {
@@ -3006,7 +3007,8 @@
   }
     
   .fc-custom-navbar-logo {
-      width: 50px;
+    background-color: #ffffff; 
+    width: 50px;
   }
     
   .img-brousher-bit-up {
